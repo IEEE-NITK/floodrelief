@@ -3,8 +3,6 @@ var router = express.Router();
 var Requestee = require('../models/requestee');
 
 router.post('/request_help', requestHelp);
-// router.get('/requests', requests);
-// router.post('/update_request', updateRequest);
 
 function requestHelp(request, response, next) {
   var body = request.body;
