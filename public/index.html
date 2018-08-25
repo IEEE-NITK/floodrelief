@@ -102,15 +102,22 @@
                         <h4 class="white-text my-4">
                             An initiative for collaberative flood relief management in
                             <span class="light-blue-text">Karnataka</span>
-                            to help volunteers, authorities and flood victims.
+                            to help volunteers, authorities and flood victims by
+                            <p style="display:flex; justify-content: center; align-items: center">
+                                <img src="img/main/ieee_nitk.png" alt="ieee_nitk" height="75">
+                                &nbsp;
+                                <img src="img/main/ieee_blr.png" alt="ieee_blr" height="55x">
+                            </p>
                             <div class="container">
                                 <!--First row-->
                                 <div class="row">
                                     <!--First column-->
                                     <div class="col-md-12">
+
                                         <div class="footer-socials mb-5 ">
+
                                             <!--Scroll Down-->
-                                            <a href="#features" class="icons-sm li-ic"><i class="fa fa-arrow-circle-down fa-2x white-text mr-md-4"></i></a>
+                                            <a href="#features" class="icons-sm li-ic"><i class="fa fa-arrow-circle-down fa-2x white-text"></i></a>
                                         </div>
                                     </div>
                                     <!--/First column-->
@@ -182,14 +189,12 @@
                             </div>
 
                             <div class="md-form form-sm">
-                                <input type="text" id="gps_coordinates" class="form-control" name="gps_coordinates"
-                                    disabled value="Default location"></input>
+                                <input type="text" id="gps_coordinates" class="form-control" name="gps_coordinates" disabled value="Default location"></input>
                                 <label for="gps_coordinates">GPS Coordinates</label>
                             </div>
 
                             <div class="md-form form-sm">
-                                <input type="number" id="gps_accuracy" class="form-control" name="gps_accuracy"
-                                    disabled value="20"></input>
+                                <input type="number" id="gps_accuracy" class="form-control" name="gps_accuracy" disabled value="20"></input>
                                 <label for="gps_accuracy">GPS Accuracy</label>
                             </div>
 
@@ -228,7 +233,7 @@
                                 <input type="text" id="clothing_details" class="form-control" name="clothing_details">
                                 <label for="clothing_details">Details for required clothing</label>
                             </div>
-    
+
                             <div class="form-check" style="margin-left: 20px;">
                                 <input onclick='getDetails("medicine")' type="checkbox" class="form-check-input" id="medicine" name="medicine">
                                 <label class="form-check-label" for="medicine">Medicine</label>
@@ -255,12 +260,12 @@
                                 <input type="text" id="toiletries_details" class="form-control" name="toiletries_details">
                                 <label for="toiletries_details">Details for required toiletries </label>
                             </div>
-                            
+
                             <div class="md-form form-sm">
                                 <input type="text" id="other_needs" class="form-control" name="other_needs"></input>
                                 <label for="other_needs">Other Needs</label>
                             </div>
-                            
+
                         </form>
                         <div class="text-center">
                             <button class="btn btn-light-blue" onclick="sendRequestHelp()">Get Help</button>
