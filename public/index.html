@@ -44,6 +44,11 @@
                         <li class="nav-item">
                             <a class="nav-link white-text" href="#features">Services</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link white-text" data-toggle="modal" data-target="#modalLoginAvatarDemo">
+                                Admin Login
+                            </a>
+                        </li>
 
                     </ul>
                     <!-- Links -->
@@ -52,6 +57,39 @@
             </div>
         </nav>
         <!--/.Navbar-->
+
+        <!--Modal Form Login with Avatar Demo-->
+        <div class="modal fade" id="modalLoginAvatarDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+                <!--Content-->
+                <div class="modal-content">
+
+                    <!--Body-->
+                    <div class="modal-body text-center mb-1">
+
+                        <h5 class="mt-1 mb-2">Admin Login</h5>
+
+                        <div class="md-form ml-0 mr-0">
+                            <input type="text" id="username" class="form-control ml-0">
+                            <label for="username" class="ml-0">Enter username</label>
+                        </div>
+                        <div class="md-form ml-0 mr-0">
+                            <input type="password" id="password" class="form-control ml-0">
+                            <label for="password" class="ml-0">Enter password</label>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button class="btn btn-cyan" onclick="login()">Login
+                                <i class="fa fa-sign-in ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!--Modal Form Login with Avatar Demo-->
+
 
         <!-- Mask -->
         <div id="intro" class="view hm-black-strong">
@@ -308,6 +346,21 @@
     <script src="https://maps.google.com/maps/api/js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsZwc4NHo2JhjvtoFmv5N89u7Ta042KtE&callback=initMap" async
         defer></script>
+    <script>
+
+        //Login
+        function login() {
+            let username = $('#username').val();
+            let password = $('#password').val();
+            $.post('/admin/authenticate',
+                { username: username, password: password },
+                function (data) {
+                    console.log(data);
+                    localStorage.setItem('id_token', data.token);
+                    $(location).attr('href', 'dashboard.html');
+                });
+        }
+    </script>
     <script src="js/main.js"></script>
 </body>
 
