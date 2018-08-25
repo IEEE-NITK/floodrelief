@@ -35,6 +35,7 @@ function requestHelp(request, response, next) {
   newRequestee.save(function(err, requestee){
     if (err) {
         response.status(500);
+        console.log(err);
         response.send("DB Error: " + err + "\nBody: " + JSON.stringify(body));
     }
     else {

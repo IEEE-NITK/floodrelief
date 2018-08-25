@@ -59,7 +59,7 @@ router.get('/requests', passport.authenticate('jwt', { session: false }), (req, 
         } else {
             res.send(requests);
         }
-    })
+    });
 });
 
 router.post('/update_request', passport.authenticate('jwt', { session: false }), (req, res, next) => {
