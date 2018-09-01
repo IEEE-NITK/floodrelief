@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Karnataka Flood Rescue</title>
+    <title>Karnataka Relief</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -22,16 +22,18 @@
 
     <header>
         <!--Navbar-->
-        <nav class="navbar special-color-dark navbar-expand-lg fixed-top scrolling-navbar">
+        <nav class="navbar navbar-dark special-color-dark navbar-expand-lg fixed-top scrolling-navbar">
             <div class="container">
                 <!-- Navbar brand -->
                 <a class="navbar-brand white-text" href="#">
-                    <img src="img/icon/flood_rescue.png" alt="icon-site" height="50"> Karnataka Flood Rescue
+                    <img src="img/icon/flood_rescue.png" alt="icon-site" height="40" style="color: white"> Karnataka Relief
                 </a>
 
                 <!-- Collapse button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Collapsible content -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,7 +44,7 @@
                             <a class="nav-link white-text" href="#rescue">Help Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link white-text" href="#features">Services</a>
+                            <a class="nav-link white-text" href="#content">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link white-text" data-toggle="modal" data-target="#modalLoginAvatarDemo">
@@ -94,12 +96,12 @@
         <!-- Mask -->
         <div id="intro" class="view hm-black-strong">
             <div class="container-fluid full-bg-img d-flex align-items-center justify-content-center">
-                <div class="row d-flex justify-content-center">
+                <div class="row justify-content-center">
                     <div class="col-md-10 text-center">
-                        <h4 class="display-4 font-bold white-text mb-2">Karnataka Flood Rescue
-                            <span class="light-blue-text">.</span></h4>
+                        <h1 class="page-title font-bold white-text mb-2">Karnataka Relief
+                            <span class="light-blue-text">.</span></h1>
                         <hr class="hr-light">
-                        <h4 class="white-text my-4">
+                        <h4 class="white-text my-4 h4-responsive">
                             An initiative for collaberative flood relief management in
                             <span class="light-blue-text">Karnataka</span>
                             to help volunteers, authorities and flood victims by
@@ -114,10 +116,10 @@
                                     <!--First column-->
                                     <div class="col-md-12">
 
-                                        <div class="footer-socials mb-5 ">
+                                        <div class="footer-socials">
 
                                             <!--Scroll Down-->
-                                            <a href="#features" class="icons-sm li-ic"><i class="fa fa-arrow-circle-down fa-2x white-text"></i></a>
+                                            <a href="#content" class="icons-sm li-ic"><i class="fa fa-arrow-circle-down fa-2x white-text"></i></a>
                                         </div>
                                     </div>
                                     <!--/First column-->
@@ -131,34 +133,34 @@
         <!-- Mask -->
     </header>
 
-    <main class="mt-5">
+    <main class="mt-5" id="content">
         <div class="container">
-            <section id="features" class="text-center">
+            <section id="features" class="text-center mb-5">
                 <div class="row">
-                    <div class="col-md-4 mb-5">
+                    <div class="col-md-4">
                         <img src="img/main/volunteer.svg" alt="volunteer" width="70">
                         <h4 class="my-4 font-weight-bold">Volunteer</h4>
                         <p class="grey-text">Volunteer for helping out the flood victims.</p>
                     </div>
-                    <div class="col-md-4 mb-5">
+                    <div class="col-md-4">
                         <img src="img/main/donate.svg" alt="donate" width="70">
                         <h4 class="my-4 font-weight-bold">Donate</h4>
                         <p class="grey-text">Help the flood victims by donating here.</p>
                     </div>
-                    <div class="col-md-4 mb-5">
+                    <div class="col-md-4">
                         <img src="img/main/helpline.svg" alt="helpline" width="70">
-                        <h4 class="my-4 font-weight-bold">Helplline Numbers</h4>
+                        <h4 class="my-4 font-weight-bold">Helpline Numbers</h4>
                         <p class="grey-text">Helpline numbers for different locations and agencies.</p>
                     </div>
                 </div>
             </section>
-            <hr class="my-5">
+            <hr>
 
-            <section id="rescue">
-                <h2 class="mb-5 font-weight-bold text-center">Rescue Me</h2>
-                <div class=" row">
-                    <div class="col-lg-5 col-md-12">
-                        <form id="request_form" class="p-5">
+            <section id="rescue" class="pt-5">
+                <h2 class="mb-4 font-weight-bold text-center">Rescue Me</h2>
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 p-5">
+                        <form id="request_form">
 
                             <label>District</label>
                             <select class="mdb-select" name="district">
@@ -312,7 +314,7 @@
                                 <a href="" target="_blank" class="icons-sm li-ic"><i class="fa fa-slack fa-2x white-text mr-md-4">
                                     </i></a>
                                 <!--Github-->
-                                <a href="" target="_blank" class="icons-sm pin-ic"><i class="fa fa-github fa-2x white-text mr-md-4"
+                                <a href="https://github.com/IEEE-NITK/floodrelief" target="_blank" class="icons-sm pin-ic"><i class="fa fa-github fa-2x white-text mr-md-4"
                                         aria-hidden="true"> </i></a>
                             </div>
                             Join our slack channel for collaberative help or contribute to the website on github.
